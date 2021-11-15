@@ -1,3 +1,4 @@
+import django_heroku
 """
 Django settings for djangoProject1 project.
 
@@ -135,3 +136,5 @@ REST_FRAMEWORK = {
 }
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# Activate Django-Heroku.
+django_heroku.settings(locals())
