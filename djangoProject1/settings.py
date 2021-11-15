@@ -79,14 +79,12 @@ WSGI_APPLICATION = 'djangoProject1.wsgi.application'
 
 DATABASES = {
     'default': {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'd9ti2bla59r0dq',
-            'USER': 'riidarvnaxyapn',
-            'PASSWORD': '73269f9aed2c883fe594b36df07b36780f4def89c7e718162cdb6ef0075e92cf',
-            'HOST': 'ec2-34-203-182-172.compute-1.amazonaws.com',
-            'PORT': '5432',
-        }
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd9ti2bla59r0dq',
+        'USER': 'riidarvnaxyapn',
+        'PASSWORD': '73269f9aed2c883fe594b36df07b36780f4def89c7e718162cdb6ef0075e92cf',
+        'HOST': 'ec2-34-203-182-172.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
