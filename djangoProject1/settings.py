@@ -1,4 +1,5 @@
 import django_heroku
+
 """
 Django settings for djangoProject1 project.
 
@@ -78,8 +79,14 @@ WSGI_APPLICATION = 'djangoProject1.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': 'd9ti2bla59r0dq',
+            'USER': 'riidarvnaxyapn',
+            'PASSWORD': '73269f9aed2c883fe594b36df07b36780f4def89c7e718162cdb6ef0075e92cf',
+            'HOST': 'postgresql://ec2-34-203-182-172.compute-1.amazonaws.com',
+            'PORT': '5432',
+        }
     }
 }
 
